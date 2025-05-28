@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Mobile Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📱 AI Mobile Finder</h1>
+    <input type="text" id="searchInput" placeholder="Search by mobile name..." />
+    <button onclick="searchMobile()">🔍 Search</button>
+  </header>
+
+  <main>
+    <section id="suggested">
+      <h2>🔥 Suggested Mobiles</h2>
+      <div id="suggestedMobiles" class="grid"></div>
+    </section>
+
+    <section id="comparison">
+      <h2>⚖️ Compare Mobiles</h2>
+      <div class="compareInputs">
+        <input type="text" id="phone1" placeholder="Enter first phone name" />
+        <input type="text" id="phone2" placeholder="Enter second phone name" />
+        <button onclick="comparePhones()">Compare</button>
+      </div>
+      <div id="comparisonResult" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AI Mobile Finder</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
