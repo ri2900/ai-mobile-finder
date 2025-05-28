@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+header {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header input {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  border: none;
+}
+header button {
+  padding: 10px 15px;
+  border: none;
+  background: #00b894;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main {
+  padding: 20px;
+}
+h2 {
+  margin-top: 40px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: calc(50% - 20px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.compareInputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.compareInputs input {
+  flex: 1;
+  padding: 10px;
+}
+.compareInputs button {
+  padding: 10px 15px;
+  background: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+  header input {
+    width: 80%;
+  }
+}
